@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBBD46A21FEB601F00C100E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46A11FEB601F00C100E3 /* AppDelegate.m */; };
+		CBBD46A81FEB601F00C100E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBD46A61FEB601F00C100E3 /* Main.storyboard */; };
+		CBBD46AA1FEB601F00C100E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBD46A91FEB601F00C100E3 /* Assets.xcassets */; };
+		CBBD46AD1FEB601F00C100E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBD46AB1FEB601F00C100E3 /* LaunchScreen.storyboard */; };
+		CBBD46B01FEB601F00C100E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46AF1FEB601F00C100E3 /* main.m */; };
+		CBBD46B81FEB606E00C100E3 /* LGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46B71FEB606E00C100E3 /* LGViewController.m */; };
+		CBBD46C91FEB60A800C100E3 /* AVPlayerItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46BA1FEB60A500C100E3 /* AVPlayerItem+Additions.m */; };
+		CBBD46CA1FEB60A800C100E3 /* FilterVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBBD46BC1FEB60A500C100E3 /* FilterVertex.glsl */; };
+		CBBD46CB1FEB60A800C100E3 /* LGRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46BD1FEB60A600C100E3 /* LGRender.m */; };
+		CBBD46CC1FEB60A800C100E3 /* LGCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46BE1FEB60A600C100E3 /* LGCustomVideoCompositor.m */; };
+		CBBD46CD1FEB60A800C100E3 /* LGCustomVideoCompositionInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46BF1FEB60A600C100E3 /* LGCustomVideoCompositionInstruction.m */; };
+		CBBD46CE1FEB60A800C100E3 /* FilterFrag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CBBD46C01FEB60A600C100E3 /* FilterFrag.glsl */; };
+		CBBD46CF1FEB60A800C100E3 /* LGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46C11FEB60A600C100E3 /* LGPlayerView.m */; };
+		CBBD46D01FEB60A800C100E3 /* LGVideoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46C21FEB60A700C100E3 /* LGVideoBuilder.m */; };
+		CBBD46D11FEB60A800C100E3 /* LGVideoEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBD46C71FEB60A800C100E3 /* LGVideoEditModel.m */; };
+		CBBD46D41FEB60B400C100E3 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CBBD46D21FEB60B300C100E3 /* 1.mp4 */; };
+		CBBD46D51FEB60B400C100E3 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CBBD46D31FEB60B400C100E3 /* 2.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CBBD469D1FEB601F00C100E3 /* 视频拼接.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "视频拼接.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBD46A01FEB601F00C100E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBBD46A11FEB601F00C100E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBBD46A71FEB601F00C100E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBBD46A91FEB601F00C100E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBBD46AC1FEB601F00C100E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBBD46AE1FEB601F00C100E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBBD46AF1FEB601F00C100E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBBD46B61FEB606E00C100E3 /* LGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGViewController.h; sourceTree = "<group>"; };
+		CBBD46B71FEB606E00C100E3 /* LGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGViewController.m; sourceTree = "<group>"; };
+		CBBD46B91FEB60A500C100E3 /* LGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPlayerView.h; sourceTree = "<group>"; };
+		CBBD46BA1FEB60A500C100E3 /* AVPlayerItem+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItem+Additions.m"; sourceTree = "<group>"; };
+		CBBD46BB1FEB60A500C100E3 /* LGVideoEditModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGVideoEditModel.h; sourceTree = "<group>"; };
+		CBBD46BC1FEB60A500C100E3 /* FilterVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FilterVertex.glsl; sourceTree = "<group>"; };
+		CBBD46BD1FEB60A600C100E3 /* LGRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGRender.m; sourceTree = "<group>"; };
+		CBBD46BE1FEB60A600C100E3 /* LGCustomVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCustomVideoCompositor.m; sourceTree = "<group>"; };
+		CBBD46BF1FEB60A600C100E3 /* LGCustomVideoCompositionInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCustomVideoCompositionInstruction.m; sourceTree = "<group>"; };
+		CBBD46C01FEB60A600C100E3 /* FilterFrag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FilterFrag.glsl; sourceTree = "<group>"; };
+		CBBD46C11FEB60A600C100E3 /* LGPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPlayerView.m; sourceTree = "<group>"; };
+		CBBD46C21FEB60A700C100E3 /* LGVideoBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVideoBuilder.m; sourceTree = "<group>"; };
+		CBBD46C31FEB60A700C100E3 /* LGCustomVideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCustomVideoCompositor.h; sourceTree = "<group>"; };
+		CBBD46C41FEB60A700C100E3 /* AVPlayerItem+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItem+Additions.h"; sourceTree = "<group>"; };
+		CBBD46C51FEB60A700C100E3 /* LGVideoBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGVideoBuilder.h; sourceTree = "<group>"; };
+		CBBD46C61FEB60A700C100E3 /* LGRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGRender.h; sourceTree = "<group>"; };
+		CBBD46C71FEB60A800C100E3 /* LGVideoEditModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVideoEditModel.m; sourceTree = "<group>"; };
+		CBBD46C81FEB60A800C100E3 /* LGCustomVideoCompositionInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCustomVideoCompositionInstruction.h; sourceTree = "<group>"; };
+		CBBD46D21FEB60B300C100E3 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		CBBD46D31FEB60B400C100E3 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBBD469A1FEB601F00C100E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBBD46941FEB601F00C100E3 = {
+			isa = PBXGroup;
+			children = (
+				CBBD469F1FEB601F00C100E3 /* 视频拼接 */,
+				CBBD469E1FEB601F00C100E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBBD469E1FEB601F00C100E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD469D1FEB601F00C100E3 /* 视频拼接.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBBD469F1FEB601F00C100E3 /* 视频拼接 */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD46D71FEB676000C100E3 /* Controller */,
+				CBBD46D91FEB678500C100E3 /* Model */,
+				CBBD46D81FEB677400C100E3 /* View */,
+				CBBD46DA1FEB679500C100E3 /* Util */,
+				CBBD46DB1FEB67BE00C100E3 /* Category */,
+				CBBD46D61FEB674C00C100E3 /* Resources */,
+				CBBD46A01FEB601F00C100E3 /* AppDelegate.h */,
+				CBBD46A11FEB601F00C100E3 /* AppDelegate.m */,
+				CBBD46A61FEB601F00C100E3 /* Main.storyboard */,
+				CBBD46A91FEB601F00C100E3 /* Assets.xcassets */,
+				CBBD46AB1FEB601F00C100E3 /* LaunchScreen.storyboard */,
+				CBBD46AE1FEB601F00C100E3 /* Info.plist */,
+				CBBD46AF1FEB601F00C100E3 /* main.m */,
+			);
+			path = "视频拼接";
+			sourceTree = "<group>";
+		};
+		CBBD46D61FEB674C00C100E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD46D21FEB60B300C100E3 /* 1.mp4 */,
+				CBBD46D31FEB60B400C100E3 /* 2.mp4 */,
+				CBBD46C01FEB60A600C100E3 /* FilterFrag.glsl */,
+				CBBD46BC1FEB60A500C100E3 /* FilterVertex.glsl */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBBD46D71FEB676000C100E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD46B61FEB606E00C100E3 /* LGViewController.h */,
+				CBBD46B71FEB606E00C100E3 /* LGViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBBD46D81FEB677400C100E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD46B91FEB60A500C100E3 /* LGPlayerView.h */,
+				CBBD46C11FEB60A600C100E3 /* LGPlayerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBBD46D91FEB678500C100E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD46BB1FEB60A500C100E3 /* LGVideoEditModel.h */,
+				CBBD46C71FEB60A800C100E3 /* LGVideoEditModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBBD46DA1FEB679500C100E3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD46C81FEB60A800C100E3 /* LGCustomVideoCompositionInstruction.h */,
+				CBBD46BF1FEB60A600C100E3 /* LGCustomVideoCompositionInstruction.m */,
+				CBBD46C31FEB60A700C100E3 /* LGCustomVideoCompositor.h */,
+				CBBD46BE1FEB60A600C100E3 /* LGCustomVideoCompositor.m */,
+				CBBD46C61FEB60A700C100E3 /* LGRender.h */,
+				CBBD46BD1FEB60A600C100E3 /* LGRender.m */,
+				CBBD46C51FEB60A700C100E3 /* LGVideoBuilder.h */,
+				CBBD46C21FEB60A700C100E3 /* LGVideoBuilder.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CBBD46DB1FEB67BE00C100E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CBBD46C41FEB60A700C100E3 /* AVPlayerItem+Additions.h */,
+				CBBD46BA1FEB60A500C100E3 /* AVPlayerItem+Additions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBBD469C1FEB601F00C100E3 /* 视频拼接 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBD46B31FEB601F00C100E3 /* Build configuration list for PBXNativeTarget "视频拼接" */;
+			buildPhases = (
+				CBBD46991FEB601F00C100E3 /* Sources */,
+				CBBD469A1FEB601F00C100E3 /* Frameworks */,
+				CBBD469B1FEB601F00C100E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "视频拼接";
+			productName = "视频拼接";
+			productReference = CBBD469D1FEB601F00C100E3 /* 视频拼接.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBBD46951FEB601F00C100E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "L了个G";
+				TargetAttributes = {
+					CBBD469C1FEB601F00C100E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CBBD46981FEB601F00C100E3 /* Build configuration list for PBXProject "视频拼接" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBBD46941FEB601F00C100E3;
+			productRefGroup = CBBD469E1FEB601F00C100E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBBD469C1FEB601F00C100E3 /* 视频拼接 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBBD469B1FEB601F00C100E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBD46AD1FEB601F00C100E3 /* LaunchScreen.storyboard in Resources */,
+				CBBD46CA1FEB60A800C100E3 /* FilterVertex.glsl in Resources */,
+				CBBD46AA1FEB601F00C100E3 /* Assets.xcassets in Resources */,
+				CBBD46D51FEB60B400C100E3 /* 2.mp4 in Resources */,
+				CBBD46D41FEB60B400C100E3 /* 1.mp4 in Resources */,
+				CBBD46A81FEB601F00C100E3 /* Main.storyboard in Resources */,
+				CBBD46CE1FEB60A800C100E3 /* FilterFrag.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBBD46991FEB601F00C100E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBD46C91FEB60A800C100E3 /* AVPlayerItem+Additions.m in Sources */,
+				CBBD46B01FEB601F00C100E3 /* main.m in Sources */,
+				CBBD46CB1FEB60A800C100E3 /* LGRender.m in Sources */,
+				CBBD46A21FEB601F00C100E3 /* AppDelegate.m in Sources */,
+				CBBD46D11FEB60A800C100E3 /* LGVideoEditModel.m in Sources */,
+				CBBD46CF1FEB60A800C100E3 /* LGPlayerView.m in Sources */,
+				CBBD46D01FEB60A800C100E3 /* LGVideoBuilder.m in Sources */,
+				CBBD46CC1FEB60A800C100E3 /* LGCustomVideoCompositor.m in Sources */,
+				CBBD46B81FEB606E00C100E3 /* LGViewController.m in Sources */,
+				CBBD46CD1FEB60A800C100E3 /* LGCustomVideoCompositionInstruction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBBD46A61FEB601F00C100E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBBD46A71FEB601F00C100E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBBD46AB1FEB601F00C100E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBBD46AC1FEB601F00C100E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBBD46B11FEB601F00C100E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBBD46B21FEB601F00C100E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBBD46B41FEB601F00C100E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 366Y8X2Z7S;
+				INFOPLIST_FILE = "视频拼接/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sina.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBBD46B51FEB601F00C100E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 366Y8X2Z7S;
+				INFOPLIST_FILE = "视频拼接/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sina.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBBD46981FEB601F00C100E3 /* Build configuration list for PBXProject "视频拼接" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBD46B11FEB601F00C100E3 /* Debug */,
+				CBBD46B21FEB601F00C100E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBBD46B31FEB601F00C100E3 /* Build configuration list for PBXNativeTarget "视频拼接" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBD46B41FEB601F00C100E3 /* Debug */,
+				CBBD46B51FEB601F00C100E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBBD46951FEB601F00C100E3 /* Project object */;
+}
